@@ -1,0 +1,95 @@
+/* *= si riferisce a tutto */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif; /* font generico*/
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
+    color: black;
+    text-decoration: none; 
+}
+
+p {
+    padding: 10px 0;
+}
+
+nav a:hover {
+    text-decoration:underline;
+    color:rgb(226, 172, 154); 
+}
+
+h4 {
+    font-weight: bold;
+    color: rgb(226, 172, 154);
+    text-transform: uppercase;
+}
+
+/* SOLO agli H4 che hanno la classe "righina" */
+h4.righina {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+h4.righina:before {
+    content: '';
+    border-bottom: 2px solid rgb(226, 172, 154);
+    position: absolute;
+    width: 40px;
+    bottom: 10px;
+}
+
+ul {
+    text-align: center;
+    padding:0;
+    list-style: none; /* Serve per togliere i pallini */
+}
+
+ul li:before {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: rgb(226, 172, 154);
+    padding-right: 10px;
+}
+
+ul li:hover {
+    padding-left: 10px;
+    transition: 0.8s; /* tempo in cui chiedo che la modifica avvenga completamente */
+}
+
+.rosa {
+    color: rgb(226, 172, 154);
+}
+
+.sezione_mini {
+    max-width: 1200px;
+    margin: 60px auto; 
+}
+
+.flex {
+    display: flex;
+}
+
+.bottone {
+    font-weight: bold;
+    text-decoration: none; 
+    background: white;
+    color: black; 
+    padding: 10px; 
+    margin-top: 3px;
+    transition: background-color 0.3s ease; 
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.bottone:hover {
+    background-color:rgb(226, 172, 154); 
+    color:white; 
+}
